@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Mahindra Singh Bhartiya is a premium Web & Graphic Designer from Gurgaon, India, crafting strategy-first digital experiences and conversion-focused brand systems."
+      content="Mahindra Singh Bhartiya is a premium Web & Graphic Designer from Gurgaon, India, building conversion-focused websites and modern brand experiences for ambitious businesses."
     />
     <meta
       name="keywords"
-      content="Mahindra Singh Bhartiya, freelance designer, web designer, graphic designer, Gurgaon designer, premium portfolio"
+      content="Mahindra Singh Bhartiya, premium web designer, graphic designer, Gurgaon, freelance designer, conversion-focused websites"
     />
     <meta name="author" content="Mahindra Singh Bhartiya" />
     <title>Mahindra Singh Bhartiya | Premium Web & Graphic Designer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -27,7 +27,8 @@
 
     <header class="site-header glass">
       <a href="#home" class="brand">MSB</a>
-      <nav aria-label="Primary Navigation">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation">Menu</button>
+      <nav id="primaryNav" aria-label="Primary Navigation">
         <ul>
           <li><a href="about.html">About</a></li>
           <li><a href="#work">Work</a></li>
@@ -35,70 +36,81 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <a href="#contact" class="btn btn-small">Start Project</a>
+      <a href="#contact" class="btn btn-small">Book Call</a>
     </header>
 
     <main>
       <section id="home" class="hero section">
         <div class="hero-gradient" aria-hidden="true"></div>
+        <div class="hero-noise" aria-hidden="true"></div>
         <div class="hero-content fade-up">
-          <p class="eyebrow">Premium Freelance Designer &amp; Creative Strategist</p>
-          <h1>Crafting Digital Experiences That Convert &amp; Elevate Brands</h1>
+          <p class="eyebrow">Premium Freelance Designer & Creative Strategist</p>
+          <h1>Crafting Digital Experiences That Convert & Elevate Brands</h1>
           <p class="lead">
-            Mahindra Singh Bhartiya is a premium Web &amp; Graphic Designer helping brands
-            build powerful digital identities and high-converting websites.
+            Mahindra Singh Bhartiya creates high-performance websites and premium visual systems
+            for brands that want authority, trust, and measurable business growth.
           </p>
           <div class="cta-row">
             <a class="btn" href="#work">View Selected Work</a>
             <a class="btn btn-ghost" href="#contact">Book a Free Consultation</a>
           </div>
+          <div class="hero-metrics">
+            <article><strong>Premium</strong><span>Positioning-first design approach</span></article>
+            <article><strong>Fast</strong><span>Performance-focused modern builds</span></article>
+            <article><strong>Conversion</strong><span>Business-driven UX decisions</span></article>
+          </div>
         </div>
       </section>
 
-      <section id="about" class="section container fade-up">
-        <a class="btn btn-ghost" href="about.html" style="margin-bottom:1rem; display:inline-block;">Open Full About Page</a>
-        <p class="eyebrow">About</p>
-        <h2>Design authority built for ambitious brands.</h2>
-        <p>
-          I build strategy-driven design systems where aesthetics, performance, and business
-          outcomes move in sync. Every decision—from visual language to conversion pathways—is
-          engineered to position your brand as category-defining, drive measurable growth, and
-          create digital experiences that feel as premium as the clients you want to attract.
-        </p>
+      <section id="about" class="section container about-preview fade-up">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>Strategy-led design for serious business outcomes.</h2>
+          <p>
+            I combine design psychology, strong brand storytelling, and conversion architecture
+            to build experiences that attract high-value clients. My work balances aesthetics and
+            performance so your brand looks elite and performs like a sales asset.
+          </p>
+          <a class="text-link" href="about.html">Explore full profile →</a>
+        </div>
+        <div class="about-preview-card glass">
+          <h3>Based in Gurgaon, India</h3>
+          <p>Available worldwide for premium website and brand collaborations.</p>
+        </div>
       </section>
 
       <section id="work" class="section container">
         <div class="section-heading fade-up">
           <p class="eyebrow">Selected Work</p>
-          <h2>High-impact projects for modern businesses.</h2>
+          <h2>Designed to position brands at the top of their category.</h2>
         </div>
         <div class="portfolio-grid">
-          <article class="project-card fade-up" data-project="Luxe Atelier" data-category="Web Design" data-description="A cinematic luxury fashion website focused on storytelling, editorial layouts, and a frictionless sales journey.">
+          <article class="project-card fade-up" data-project="Luxe Atelier" data-category="Web Design" data-description="Luxury fashion website with cinematic storytelling and a conversion-focused product narrative." data-tint="gold">
             <div class="project-image"></div>
             <h3>Luxe Atelier</h3>
             <p>Web Design</p>
           </article>
-          <article class="project-card fade-up" data-project="Nova Ventures" data-category="Branding" data-description="A complete visual identity and brand system for a next-generation venture capital firm.">
+          <article class="project-card fade-up" data-project="Nova Ventures" data-category="Brand Identity" data-description="Premium brand identity system for a venture studio seeking enterprise-level credibility." data-tint="violet">
             <div class="project-image"></div>
             <h3>Nova Ventures</h3>
             <p>Branding</p>
           </article>
-          <article class="project-card fade-up" data-project="Pulse Medical" data-category="UI/UX" data-description="Healthcare dashboard UX redesign that improved appointment conversions and reduced user friction.">
+          <article class="project-card fade-up" data-project="Pulse Medical" data-category="UI/UX" data-description="UI/UX optimization for a healthcare platform to improve booking completion rates." data-tint="cyan">
             <div class="project-image"></div>
             <h3>Pulse Medical</h3>
             <p>UI/UX</p>
           </article>
-          <article class="project-card fade-up" data-project="Aurum Residences" data-category="Web Design" data-description="A high-conversion real estate website with immersive visuals and a lead-focused architecture.">
+          <article class="project-card fade-up" data-project="Aurum Residences" data-category="Web Design" data-description="Premium real-estate website engineered for high-quality lead generation." data-tint="gold">
             <div class="project-image"></div>
             <h3>Aurum Residences</h3>
             <p>Web Design</p>
           </article>
-          <article class="project-card fade-up" data-project="Kairo Commerce" data-category="E-commerce" data-description="Premium e-commerce experience with seamless product discovery and conversion-optimized checkout paths.">
+          <article class="project-card fade-up" data-project="Kairo Commerce" data-category="E-commerce UX" data-description="Refined e-commerce UX and CRO-focused product discovery flows." data-tint="violet">
             <div class="project-image"></div>
             <h3>Kairo Commerce</h3>
             <p>E-commerce</p>
           </article>
-          <article class="project-card fade-up" data-project="Vertex Studio" data-category="Branding" data-description="Refined brand identity and digital rollout for a creative production studio targeting enterprise clients.">
+          <article class="project-card fade-up" data-project="Vertex Studio" data-category="Branding" data-description="Identity refresh and digital design direction for a creative production brand." data-tint="cyan">
             <div class="project-image"></div>
             <h3>Vertex Studio</h3>
             <p>Branding</p>
@@ -109,34 +121,34 @@
       <section id="services" class="section container">
         <div class="section-heading fade-up">
           <p class="eyebrow">Services</p>
-          <h2>Premium design solutions engineered for growth.</h2>
+          <h2>High-ticket design services built for growth.</h2>
         </div>
         <div class="service-grid">
-          <article class="glass fade-up"><h3>High-Performance Website Design</h3><p>Fast, elegant, and strategically structured websites that position your brand and convert intent into action.</p></article>
-          <article class="glass fade-up"><h3>Conversion Landing Pages</h3><p>Campaign-focused pages built to maximize leads, reduce drop-offs, and improve return on ad spend.</p></article>
-          <article class="glass fade-up"><h3>E-commerce Experience Design</h3><p>Premium storefronts with intuitive journeys that increase average order value and customer retention.</p></article>
-          <article class="glass fade-up"><h3>Brand Identity Systems</h3><p>Distinctive visual ecosystems that create credibility, consistency, and recall across every touchpoint.</p></article>
-          <article class="glass fade-up"><h3>UI/UX Strategy &amp; Optimization</h3><p>Data-informed interface refinement that aligns user behavior with your business goals.</p></article>
+          <article class="glass fade-up"><h3>High-Performance Website Design</h3><p>Premium websites with strong storytelling, fast loading, and conversion-focused structure.</p></article>
+          <article class="glass fade-up"><h3>Conversion Landing Pages</h3><p>Campaign pages crafted to maximize qualified inquiries and lower drop-off points.</p></article>
+          <article class="glass fade-up"><h3>E-commerce Experience Design</h3><p>Luxury storefront UX that improves trust, product clarity, and checkout completion.</p></article>
+          <article class="glass fade-up"><h3>Brand Identity Systems</h3><p>Cohesive visual systems that elevate perception and build category authority.</p></article>
+          <article class="glass fade-up"><h3>UI/UX Strategy & Optimization</h3><p>Data-informed interface refinement to align user actions with business KPIs.</p></article>
         </div>
       </section>
 
       <section class="section container">
         <div class="section-heading fade-up">
           <p class="eyebrow">Process</p>
-          <h2>A refined 4-step framework.</h2>
+          <h2>Discover → Strategy → Design → Launch</h2>
         </div>
         <div class="process-grid">
-          <article class="fade-up"><span>01</span><h3>Discover</h3><p>Deep-dive into goals, audience, and market context.</p></article>
-          <article class="fade-up"><span>02</span><h3>Strategy</h3><p>Shape positioning, messaging, and conversion pathways.</p></article>
-          <article class="fade-up"><span>03</span><h3>Design</h3><p>Craft immersive interfaces and a premium brand language.</p></article>
-          <article class="fade-up"><span>04</span><h3>Launch</h3><p>Deploy, optimize, and iterate for measurable growth.</p></article>
+          <article class="fade-up"><span>01</span><h3>Discover</h3><p>Audit goals, market, audience, and brand perception.</p></article>
+          <article class="fade-up"><span>02</span><h3>Strategy</h3><p>Map messaging, UX priorities, and conversion direction.</p></article>
+          <article class="fade-up"><span>03</span><h3>Design</h3><p>Create a premium digital identity and interface system.</p></article>
+          <article class="fade-up"><span>04</span><h3>Launch</h3><p>Deploy, measure, and optimize for sustained growth.</p></article>
         </div>
       </section>
 
       <section class="section container">
         <div class="section-heading fade-up">
-          <p class="eyebrow">Skills &amp; Tools</p>
-          <h2>Crafted with modern tools and proven capabilities.</h2>
+          <p class="eyebrow">Skills & Tools</p>
+          <h2>Built with modern tools and precision craft.</h2>
         </div>
         <div class="skills">
           <span class="skill-tag fade-up">HTML</span>
@@ -152,23 +164,26 @@
       <section class="section container">
         <div class="section-heading fade-up">
           <p class="eyebrow">Testimonials</p>
-          <h2>Trusted by ambitious founders and teams.</h2>
+          <h2>Results-backed trust from premium clients.</h2>
         </div>
         <div class="testimonial-grid">
-          <blockquote class="glass fade-up">“Mahindra transformed our website into a premium acquisition asset. We started attracting higher-ticket clients within weeks.”<cite>— Founder, Luxe Atelier</cite></blockquote>
-          <blockquote class="glass fade-up">“A rare mix of strategic thinking and exceptional visual craft. Every design decision had a business purpose.”<cite>— Marketing Lead, Nova Ventures</cite></blockquote>
-          <blockquote class="glass fade-up">“From brand identity to UX, the execution was world-class and conversion-focused. Highly recommended.”<cite>— Director, Kairo Commerce</cite></blockquote>
+          <blockquote class="glass fade-up">“Our digital presence moved from average to elite. We now attract better-fit, higher-paying clients.”<cite>— Founder, Luxe Atelier</cite></blockquote>
+          <blockquote class="glass fade-up">“Mahindra’s work is strategic, intentional, and truly conversion-focused. A rare combination.”<cite>— Marketing Lead, Nova Ventures</cite></blockquote>
+          <blockquote class="glass fade-up">“The design quality felt agency-level, but execution was faster and sharper.”<cite>— Director, Kairo Commerce</cite></blockquote>
         </div>
       </section>
 
       <section id="contact" class="section container contact fade-up">
         <p class="eyebrow">Contact</p>
         <h2>Let’s Build Something Remarkable</h2>
-        <p class="lead">Based in Gurgaon, India — available for premium collaborations globally.</p>
+        <p class="lead">Tell me about your project goals — I’ll help you craft a premium digital experience that performs.</p>
         <form class="contact-form" action="#" method="post">
-          <label>Name<input type="text" name="name" required /></label>
-          <label>Email<input type="email" name="email" required /></label>
-          <label>Project Details<textarea name="message" rows="4" required></textarea></label>
+          <label for="name">Name</label>
+          <input id="name" type="text" name="name" required />
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" required />
+          <label for="message">Project Details</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
           <button class="btn" type="submit">Send Inquiry</button>
         </form>
         <div class="contact-links">

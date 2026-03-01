@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -19,7 +19,8 @@
   <body>
     <header class="site-header glass">
       <a href="index.html" class="brand">MSB</a>
-      <nav aria-label="Primary Navigation">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation">Menu</button>
+      <nav id="primaryNav" aria-label="Primary Navigation">
         <ul>
           <li><a href="about.html" aria-current="page">About</a></li>
           <li><a href="index.html#work">Work</a></li>
@@ -27,7 +28,7 @@
           <li><a href="index.html#contact">Contact</a></li>
         </ul>
       </nav>
-      <a href="index.html#contact" class="btn btn-small">Start Project</a>
+      <a href="index.html#contact" class="btn btn-small">Book Call</a>
     </header>
 
     <main class="section container about-page">
@@ -37,31 +38,29 @@
 
       <div class="about-content fade-up">
         <p class="eyebrow">About Mahindra Singh Bhartiya</p>
-        <h1>Premium Web Designer &amp; Graphic Designer from Gurgaon, India.</h1>
+        <h1>Premium Web Designer & Graphic Designer from Gurgaon, India.</h1>
         <p>
-          I partner with founders, agencies, and growth-focused businesses to create digital
-          experiences that look premium, communicate authority, and convert consistently.
-          My work combines strategic clarity with bold visual execution—so your brand not only
-          stands out, but wins trust faster and closes better clients.
+          I help business owners, founders, and agencies build digital identities that look elite
+          and convert with intent. My approach combines strategic thinking, visual clarity, and
+          high-performance execution to move your brand from “just present” to “category-leading.”
         </p>
         <p>
-          From high-performance websites to complete brand systems, every project is built around
-          one principle: design should deliver measurable business impact while maintaining a
-          world-class visual standard.
+          Every project is designed around outcomes: stronger perception, better lead quality,
+          improved conversion flow, and a premium online presence that attracts serious clients.
         </p>
 
         <div class="about-highlights">
           <article class="glass">
-            <h3>Strategy First</h3>
-            <p>Clear positioning, buyer psychology, and conversion architecture before visuals.</p>
+            <h3>Strategic Positioning</h3>
+            <p>Design direction aligned with audience psychology and market differentiation.</p>
           </article>
           <article class="glass">
-            <h3>Performance + Aesthetics</h3>
-            <p>Fast-loading, modern interfaces that balance usability, beauty, and outcomes.</p>
+            <h3>Conversion-first UX</h3>
+            <p>Clear user journeys and persuasive structure to maximize business outcomes.</p>
           </article>
           <article class="glass">
-            <h3>Premium Collaboration</h3>
-            <p>High-touch process with decisive communication and senior-level design thinking.</p>
+            <h3>Premium Brand Presence</h3>
+            <p>High-end visual language crafted for trust, authority, and long-term recall.</p>
           </article>
         </div>
 
@@ -71,6 +70,16 @@
         </div>
       </div>
     </main>
+
+    <footer class="site-footer">
+      <p>Premium strategy + premium execution.</p>
+      <div>
+        <a href="https://dribbble.com" target="_blank" rel="noreferrer">Dribbble</a>
+        <a href="https://behance.net" target="_blank" rel="noreferrer">Behance</a>
+        <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+      <small>© <span id="year"></span> Mahindra Singh Bhartiya. All rights reserved.</small>
+    </footer>
 
     <script src="script.js"></script>
   </body>
