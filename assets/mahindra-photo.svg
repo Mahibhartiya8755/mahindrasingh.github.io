@@ -1,0 +1,18 @@
+<svg width="800" height="960" viewBox="0 0 800 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1A1A1A"/>
+      <stop offset="100%" stop-color="#0A0A0A"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D6B47D"/>
+      <stop offset="100%" stop-color="#F2E2C8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="960" rx="40" fill="url(#bg)"/>
+  <rect x="24" y="24" width="752" height="912" rx="28" stroke="url(#ring)" stroke-opacity="0.35"/>
+  <circle cx="400" cy="360" r="170" fill="#121212" stroke="url(#ring)" stroke-opacity="0.45"/>
+  <path d="M280 585C280 518.726 333.726 465 400 465C466.274 465 520 518.726 520 585V640H280V585Z" fill="#151515" stroke="url(#ring)" stroke-opacity="0.45"/>
+  <text x="400" y="790" text-anchor="middle" fill="#F6F6F6" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="700" letter-spacing="2">MAHINDRA SINGH</text>
+  <text x="400" y="835" text-anchor="middle" fill="#D6B47D" font-family="Inter, Arial, sans-serif" font-size="22" letter-spacing="4">PREMIUM DESIGNER</text>
+</svg>
